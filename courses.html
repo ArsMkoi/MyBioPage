@@ -25,7 +25,7 @@
         }
 
         .main-footer {
-            position: absolute;
+            position: relative;
             bottom: 0;
             left: 0;
             right: 0;
@@ -71,7 +71,6 @@
         }
 
         .bottom-container {
-            background-color: blue;
             height: 500px;
             width: 100%;
             margin-top: 20px;
@@ -116,7 +115,7 @@
             float: left;
             height: calc(100% - 30px);
             padding: 15px;
-            width: calc(100% - 211px);
+            width: calc(100% - 461px);
         }
 
         table.gallery-table {
@@ -138,10 +137,32 @@
             height: 222px;
         }
 
+        .right-sidebar {
+            padding: 15px;
+            float: right;
+            width: 220px;
+            height: 94%;
+            background-color: aqua;
+        }
+
+        .right-sidebar ul {
+            list-style-type: none;
+        }
+
         .box-shadow {
             -webkit-box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
             box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
+        }
+        .course-table{
+            width:100%;
+            background-color:aquamarine;
+            margin-top: 20px;
+        }
+
+        .course-table tr td{
+            padding: 5px;
+            border: 1px solid #CCC;
         }
     </style>
 </head>
@@ -156,9 +177,11 @@
                 <img src="./img/AvatarActual.jpg" rel="My Avatar">
             </div>
             <h2>My Biography</h2>
-            <p>My name is Arsen Mkoian and I'm a senior currently attending Fresno State University. I am majoring in Computer Information Systems.</p>
+            <p>My name is Arsen Mkoian and I'm a senior currently attending Fresno State University. I am majoring in Computer
+                Information Systems.</p>
             <p>One of my favorite pastimes is playing videogames.</p>
-            <p>Some of my favorite games include Dark Souls, Assassin's Creed, Uncharted, The Witcher 3, Final Fantasy IX, and many more.</p>
+            <p>Some of my favorite games include Dark Souls, Assassin's Creed, Uncharted, The Witcher 3, Final Fantasy IX, and
+                many more.</p>
             <p>I also love to play and watch basketball. My favorite team is the Los Angeles Lakers.</p>
         </div>
         <div class="bottom-container">
@@ -171,46 +194,83 @@
                         <a href="./courses.html">My Courses</a>
                     </li>
                     <li>
-                        <a href="https://www.amazon.com">Gallery</a>
+                        <a href="#">Link</a>
                     </li>
                     <li>
-                        <a href="https://www.nba.com">NBA</a>
+                        <a href="#">Link</a>
                     </li>
                     <li>
-                        <a href="https:/www.nfl.com">NFL</a>
+                        <a href="#">Link</a>
                     </li>
                     <li>
-                        <a href="https:/www.twitch.tv">Twitch</a>
+                        <a href="#">Link</a>
                     </li>
                 </ul>
             </aside>
             <div class="gallery">
-                <h3>Gallery</h3>
-                <table class="gallery-table" cellpadding="2">
+                <h3>My Courses</h3>
+                <table class="course-table" cellpadding="2px">
+                    <thead>
+                        <tr>
+                            <td>Courses
+                            </td>
+                            <td>Section</Td>
+                            <td>Instructor</Td>
+                            <td>Days</Td>
+                        </tr>
+                    </thead>
                     <tbody>
                         <tr>
-                            <td>
-                                <img class="box-shadow" src="./img/1.jpg" alt="game 1" </td>
-                                <td>
-                                    <img class="box-shadow" src="./img/2.jpg" alt="game 2" </td>
-                                    <td>
-                                        <img class="box-shadow" src="./img/3.jpg" alt="game 3" </td>
-                                        <td>
-                                            <img class="box-shadow" src="./img/4.jpg" alt="game 4" </td>
+                            <td>Programming</td>
+                            <td>Sec 123</td>
+                            <td>Kwon</td>
+                            <td>Monday/Wednesday</td>
                         </tr>
                         <tr>
-                            <td>
-                                <img class="box-shadow" src="./img/5.jpg" alt="game 5" </td>
-                                <td>
-                                    <img class="box-shadow" src="./img/6.jpg" alt="game 6" </td>
-                                    <td>
-                                        <img class="box-shadow" src="./img/7.jpg" alt="game 7" </td>
-                                        <td>
-                                            <img class="box-shadow" src="./img/8.jpg" alt="game 8" </td>
+                            <td>Programming</td>
+                            <td>Sec 123</td>
+                            <td>Kwon</td>
+                            <td>Monday/Wednesday</td>
+                        </tr>
+                        <tr>
+                            <td>Programming</td>
+                            <td>Sec 123</td>
+                            <td>Kwon</td>
+                            <td>Monday/Wednesday</td>
+                        </tr>
+                        <tr>
+                            <td>Programming</td>
+                            <td>Sec 123</td>
+                            <td>Kwon</td>
+                            <td>Monday/Wednesday</td>
+                        </tr>
+                        <tr>
+                            <td>Programming</td>
+                            <td>Sec 123</td>
+                            <td>Kwon</td>
+                            <td>Monday/Wednesday</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+            <aside class="right-sidebar">
+                <h3>Sub Nav</h3>
+                <ul class="navigation">
+                    <li>
+                        <a href="./index.html">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="./courses.html">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                            <a href="./index.html">Link 1</a>
+                        </li>
+
+                </ul>
+            </aside>
         </div>
     </div>
     <footer class="main-footer">
